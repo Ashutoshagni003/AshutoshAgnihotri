@@ -1,4 +1,4 @@
-import '/Users/ashutoshagnihotri/Coding/Portfolio/src/First_Page/Components/Projects.css'
+import './Projects.css'
 import ProjectBlocks from './ProjectBlocks';
 
  
