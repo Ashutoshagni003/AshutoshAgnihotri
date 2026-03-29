@@ -637,8 +637,8 @@ Events.on(render, "afterRender", () => {
       body.position.y + 40
     );
 
-    gradient.addColorStop(0, "#0b074e");
-    gradient.addColorStop(1, "#1a1ab0");
+    gradient.addColorStop(0, "#9d99e9");
+    gradient.addColorStop(1, "#45459e");
 
     ctx.fillStyle = gradient;
     ctx.fill();

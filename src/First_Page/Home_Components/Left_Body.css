@@ -14,7 +14,8 @@ src: url('../../assets/fonts/Enfonix-DEMO.otf') format('opentype');  font-weight
 }
 .Hello{
     display: flex;
-    font-size: 30px;
+    /* font-size: 2rem; */
+    font-size: clamp(1rem, 1.5vw, 2rem);
     margin-top: 20px;
   font-family: "Lilita One", sans-serif;
   font-weight: 600;
@@ -42,7 +43,7 @@ src: url('../../assets/fonts/Enfonix-DEMO.otf') format('opentype');  font-weight
 .first-name{
   font-family: "Enfonix", sans-serif;
   font-weight: 900;
-  font-size: 100px;
+    font-size: clamp(3rem, 8vw, 6rem);
         color: #0b0843;
          opacity : 0;
     animation: fadeOnly 1.5s ease forwards;
@@ -55,7 +56,7 @@ src: url('../../assets/fonts/Enfonix-DEMO.otf') format('opentype');  font-weight
 .second-name{
   font-family: "Enfonix", sans-serif;
   font-weight: 900;
-  font-size: 70px;
+font-size: clamp(2rem, 6vw, 4rem);
   display: flex;
         color: #0b0843;
          opacity : 0;
@@ -67,7 +68,7 @@ src: url('../../assets/fonts/Enfonix-DEMO.otf') format('opentype');  font-weight
     font-family: "Lilita One", sans-serif;
     color: #0b0843;
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 1rem;
      opacity : 0;
     animation: fadeOnly 1.5s ease forwards;
 
@@ -75,8 +76,7 @@ src: url('../../assets/fonts/Enfonix-DEMO.otf') format('opentype');  font-weight
 }
 .Intro-Content{
         font-family: 'Anta', sans-serif;
-        font-size: 20px;
-        font-weight: lighter;
+font-size: clamp(1rem, 2vw, 1.2rem);         font-weight: lighter;
         margin: 0px 0 20px 0 ;
                 color: #0b0843;
                  opacity : 0;
@@ -119,4 +119,22 @@ src: url('../../assets/fonts/Enfonix-DEMO.otf') format('opentype');  font-weight
   to {
     opacity: 1;
   }
+}
+
+
+@media (max-width: 500px) {
+  .Intro-Name{
+    display: block;
+    
+}
+.Intro-Name p{
+      margin-left: 0px;
+
+}
+.LinkedIn-Button{
+    padding: 15px 20px;
+    margin: 10px;
+    
+}
+
 }

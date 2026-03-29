@@ -1,5 +1,6 @@
 import './Projects.css'
 import ProjectBlocks from './ProjectBlocks';
+import React, { useState, useEffect } from 'react';
 
  
 const skillCover = [
@@ -77,11 +78,22 @@ color : "#eccd62",
 
 
 const Projects = () =>{
+
+    const [showProjectBlocks, setShowProjectBlocks] = useState(window.innerWidth > 800);
+    console.log(window.innerWidth);
+    console.log(showProjectBlocks);
+
+
+useEffect(() =>{
+    setShowProjectBlocks(window.innerWidth > 800);
+
+})
     
     return(
         <>
         <div id="projects" className="projects-section">
-            <ProjectBlocks/>
+{showProjectBlocks && <ProjectBlocks />}
+            
             <div className='projects-wrapper'>
                 <div className='projects-header'>
                     <h1>Skills & Capabilities</h1>
