@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Osiris';
+  src: url('/Users/ashutoshagnihotri/Coding/Portfolio/src/assets/fonts/Osiris.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Enfonix';
+  src: url('/Users/ashutoshagnihotri/Coding/Portfolio/src/assets/fonts/Enfonix-DEMO.otf') format('opentype');
+  font-weight: bold;
+}
+
+
+.Left-content{
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+}
+.Hello{
+    display: flex;
+    font-size: 30px;
+    margin-top: 20px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 600;
+  align-items: baseline;
+      color: #050058;
+       opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+
+}
+
+.Hello i{
+    margin-top: 15px;
+     opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+}
+.i-circle{
+    border: 2px solid;
+    margin-right: 10px;
+    border-radius: 40% 50%;
+    padding: 2px;
+     opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+}
+
+.first-name{
+  font-family: "Enfonix", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+        color: #0b0843;
+         opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+}
+.Intro-Name{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+.second-name{
+  font-family: "Enfonix", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  display: flex;
+        color: #0b0843;
+         opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+
+}
+.Intro-Name p{
+    display: flex;
+    font-family: "Lilita One", sans-serif;
+    color: #0b0843;
+    margin-left: 10px;
+    font-size: 18px;
+     opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+
+
+}
+.Intro-Content{
+        font-family: 'Anta', sans-serif;
+        font-size: 20px;
+        font-weight: lighter;
+        margin: 0px 0 20px 0 ;
+                color: #0b0843;
+                 opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+
+}
+.LinkedIn-Button{
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #020024;
+    border: 1px solid #0b0843;
+    font-size: 20px;
+    font-weight: 900;
+    opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+    margin: 20px;
+    align-items: baseline;
+    transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.LinkedIn-Button i{
+    margin : 0px 5px;
+     opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;
+}
+
+.Hire_Me-Button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.LinkedIn-Button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+
+@keyframes fadeOnly {
+  to {
+    opacity: 1;
+  }
+}

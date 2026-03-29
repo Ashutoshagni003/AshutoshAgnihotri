@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.screen{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome{
+    height: max-content;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    animation: scrollText 10s linear infinite;
+    padding-bottom: 10px;
+
+}
+
+.welcome h1{
+    font-size: 55px;
+    font-weight: 100;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Bruno Ace SC", sans-serif;
+
+    color: #ffffff;
+    justify-content: center;
+    align-self: center;
+    opacity : 0;
+    animation: fadeOnly 1s ease forwards;
+}
+
+.Intro{
+    background-color: #fffaee;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 18px 45px 15px 45px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    overflow: hidden;   /* important so border stays clean */
+    transition: all 0.8s ease;
+    cursor: pointer;
+    box-shadow: rgb(171, 169, 169) 0px -15px 20px -10px, rgb(171, 169, 169) 0px 15px 20px -10px;
+    opacity : 0;
+    animation: fadeOnly 0.5s ease forwards;
+}.Intro::before{
+    content: "";
+    position: absolute;
+    inset: -2px;               /* border thickness */
+    border-radius: inherit;
+    background: conic-gradient(
+  #7fffd4,
+  #8a7dff,
+  #ff77c8,
+  #ffd36b,
+  #7fffd4
+);
+    animation: borderRotate 3s linear infinite;
+    
+}
+
+/* inner layer to keep Intro background visible */
+.Intro::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #fffaee;
+    border-radius: inherit;
+}
+
+/* keep content above border layers */
+.Intro_p,
+.Intro .dot{
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes borderRotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.Intro_p{
+    color: black;
+    font-weight: 400;
+    font-size: 30px;
+  /* font-family: "Rubik", sans-serif; */
+  /* font-family: "Eczar", serif; */
+  font-family: "Audiowide", sans-serif;
+
+  font-optical-sizing: auto;
+  font-style: normal;
+  transition: all 1s cubic-bezier(0.65, 0, 0.35, 1);  
+  opacity : 0;
+    animation: fadeOnly 1.5s ease forwards;  
+
+
+}
+
+.dot{
+    height: 1.7rem;
+    width: 0.5rem;
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    animation: scrollDot 1s ease-in-out infinite;
+    border-radius: 3px 3px 2px 2px;
+    transition: all 1s cubic-bezier(0.65, 0, 0.35, 1);    
+
+}
+@keyframes scrollDot {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+  /* 100% {
+    transform: translateX(0);
+  } */
+}
+
+.Intro_hover_dot{
+    transform: translateX(-120px);
+    transition: all 1.5s cubic-bezier(0.65, 0, 0.35, 1);    
+
+    height: 2.25rem;
+    width: 0.5rem;
+}
+.Intro_hover_Intro_p{
+        transition: all 1.5s cubic-bezier(0.65, 0, 0.35, 1);    
+
+    /* transform: translateX(70px); */
+    padding: 2000px 5000px;
+    font-weight: 300;
+    font-size: 35px;
+    animation: removeText 1.5s ease forwards;
+      font-family: "Audiowide", sans-serif;
+
+
+}
+
+
+
+.ScreenChanger{
+    background-color: #fffaee;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 15px 25px;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    overflow: hidden;   /* important so border stays clean */
+    transition: all 0.8s ease;
+}
+
+
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes removeText {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOnly {
+  to {
+    opacity: 1;
+  }
+}

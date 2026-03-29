@@ -1,0 +1,83 @@
+.About-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #030303;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-upper{
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+            font-family: 'Anta', sans-serif;
+font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+}
+.about-middle{
+    flex: 0.5;
+    background-color: rgb(0, 0, 0);
+}
+.About-Main-Container{
+    flex: 8.5;
+    flex-direction: column;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.About-Header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+      font-family: "Lilita One", sans-serif;
+      font-size: 2rem;
+      height: max-content;
+      margin-top: 40px;
+       /* border: 2px solid #ffffff; */
+
+}
+.About-Body{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.About-Body p{
+    
+    font-size: 1.5rem;
+            font-family: 'Anta', sans-serif;
+            text-align: center;
+
+}
+
+.lower-circle{
+    height: 100%;
+    width: 100%;
+clip-path: ellipse(50% 100% at 50% 100%);
+    background-color: #000000;
+}
+
+
+.hide-native-cursor,
+.hide-native-cursor * {
+  /* Hides the native cursor only when this class is dynamically applied by SnowballCursor */
+  cursor: none !important;
+}
+
+@media (max-width: 1100px) {
+    .About-container{
+        width: 100vw;
+        overflow-y: auto;
+    }
+    .About-Header{
+        font-size: 1.2rem;
+    }
+    .About-Body p{
+        font-size: 1.2rem;
+    }
+
+}
