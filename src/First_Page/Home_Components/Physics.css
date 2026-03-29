@@ -1,0 +1,12 @@
+.PhysicsDiv{
+
+    animation: fadeOnly 1.5s ease forwards;
+    transition: all 0.3s ease;
+
+}
+
+@keyframes fadeOnly {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,123 @@
+.projects-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff3ee;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    color: #050058;
+    align-items: center;
+}
+.projects-wrapper{
+    /* border: 2px solid #050058; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.projects-header{
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    align-items: center;
+    font-family: 'Anta', sans-serif;
+    font-size: 1.5rem;
+    padding: 5% 20px 0px 20px;
+}
+.projects-content{
+    /* border: 2px solid #050058; */
+    width: 100%;
+    height: 90%;   
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    /* align-items: center; */
+    justify-content: center;
+}
+.skill-box-Border{
+    /* border-top: 3px solid blue; */
+    margin-top: 1px;
+    border-radius: 20px;
+}
+
+.skills-wrapper{
+    /* width: 90%; */
+    height: max-content;
+    /* border: 2px solid #050058; */
+    display: flex;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.skill-box{
+    flex: 3;
+    /* height: 100%; */
+    background-color: #fffef5;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* border: 2px solid #050058; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.skill-logo{
+    height: 10%;
+    margin: 20px;
+}
+.skill-content{
+    height: 90%;
+        position: relative;
+        margin:  0 20px 10px 20px;
+}
+
+
+.skill-content h4{
+            font-family: 'Nexa', sans-serif;
+        font-weight: 600;
+        
+}
+
+.skill-content p{
+        font-family: 'Anta', sans-serif;
+}
+
+.skill-box:hover{
+    transform: scale(1.05);
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 1s ease;
+    
+}
+.skill-content-header{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.skill-div{
+    border: 2px solid #050058;
+    margin : 5px;
+    padding: 5px 7px;
+    border-radius: 20px;
+text-align: center;}
+
+.skill-div-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 1000px) {
+    .skills-wrapper{
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+    .skill-box{
+        margin: 20px;
+    }
+    .projects-section{
+        height: auto;
+    }
+
+}
