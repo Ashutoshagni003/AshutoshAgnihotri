@@ -1,6 +1,9 @@
 import './Left_Body.css'
 
 const LeftBody = () => {
+    const openLinkedIn = () => {
+  window.open("https://www.linkedin.com/in/ashutosh-agnihotri-021b72227?utm_source=share_via&utm_content=profile&utm_medium=member_ios", "_blank");
+};
     return (
 
                 <div className='Left-content'>
@@ -18,7 +21,7 @@ const LeftBody = () => {
                     
                     <p className='Intro-Content'>Frontend Developer with a problem-solving mindset, creating responsive and intuitive applications that combine clean design, usability, and performance. Proficient in React.js, JavaScript, HTML, CSS, and Node.js, with a strong focus on building scalable interfaces and reusable components. Passionate about turning concepts into functional digital products through clean and efficient code. </p>
                     <button className="Hire_Me-Button" onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Hire Me Now</button>
-                    <button className="LinkedIn-Button"><i className="fa-brands fa-linkedin" style={{color: "#0b0843"}}></i>Linkedin</button>
+                    <button className="LinkedIn-Button" onClick={openLinkedIn}><i className="fa-brands fa-linkedin" style={{color: "#0b0843"}}></i>Linkedin</button>
 
                 </div>
                 </div>

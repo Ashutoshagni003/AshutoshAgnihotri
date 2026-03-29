@@ -39,9 +39,14 @@
 import './Home_Nav.css';
 import { useState } from 'react';
 
+
 const HomeNav = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const openResume = () => {
+  window.open("../../../public/Resume/Ashutosh agnihotri (1).pdf", "_blank");
+};
 
     return (
         <div className="HomeNav">
@@ -62,7 +67,7 @@ const HomeNav = () => {
                     <li className='items' onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Contact</li>
 
                     <li className='resume-li'>
-                        <button className="Resume-Button">
+                        <button className="Resume-Button" onClick={openResume}>
                             My Resume
                         </button>
                     </li>
