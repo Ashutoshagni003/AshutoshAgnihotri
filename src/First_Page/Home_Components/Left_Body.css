@@ -1,11 +1,9 @@
 @font-face {
   font-family: 'Osiris';
-  src: url('/Users/ashutoshagnihotri/Coding/Portfolio/src/assets/fonts/Osiris.otf') format('opentype');
-}
+src: url('../../assets/fonts/Osiris.otf') format('opentype');}
 @font-face {
   font-family: 'Enfonix';
-  src: url('/Users/ashutoshagnihotri/Coding/Portfolio/src/assets/fonts/Enfonix-DEMO.otf') format('opentype');
-  font-weight: bold;
+src: url('../../assets/fonts/Enfonix-DEMO.otf') format('opentype');  font-weight: bold;
 }
 
 

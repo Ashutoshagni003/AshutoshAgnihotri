@@ -1,4 +1,4 @@
-import '/Users/ashutoshagnihotri/Coding/Portfolio/src/First_Page/Home_Components/Physics.css'
+import './Physics.css'
 
 import React, { useEffect, useRef } from "react";
 import Matter from "matter-js";

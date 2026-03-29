@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: 'Nexa';
-  src: url('/Users/ashutoshagnihotri/Coding/Portfolio/src/assets/fonts/nexokora-techno.regular.otf') format('opentype');
+src: url('../../assets/fonts/nexokora-techno.regular.otf') format('opentype');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Neofolio';
-  src: url('/Users/ashutoshagnihotri/Coding/Portfolio/src/assets/fonts/neofolia.otf') format('opentype');
+  src: url('../../assets/fonts/neofolia.otf') format('opentype');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Risk-Atom';
-  src: url('/Users/ashutoshagnihotri/Coding/Portfolio/src/assets/fonts/Risk-Atoms.otf') format('opentype');
+  src: url('../../assets/fonts/Risk-Atoms.otf') format('opentype');
   font-weight: bold;
 }
 .HomeNav{
